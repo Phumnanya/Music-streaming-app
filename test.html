@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Pjesme Music Player</title>
+  </head>
+  
+  <body>
+    <img src="./img/logo-removebg-dark.png" alt="logo" style="width: 200px; height: 200px; display: block; margin: 0 auto;">
+    <div class="holder">
+      <div class="music-info">
+        <div class="img-container">
+          <img src="./img container/21 savage.jpg" alt="image" id="cover">
+        </div>
+        <h4 id="title"></h4>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <div class="music-container" id="music-container">
+        <audio src="./library/Zayn_-_Dusk_Till_Dawn_Ft_Sia_CeeNaija.com_.mp3" id="audio"></audio>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    </body>
+</html>

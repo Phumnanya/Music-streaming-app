@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+  }
+  .holder {
+    width: 50%;
+    margin: 0 auto;
+    background-color: black;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  @media (max-width: 800px) {.holder {width: 90%;}}
+  
+  /* styling the outer music container */
+  .music-container {
+    background-color: white;
+    display: flex;
+    padding: 20px 30px;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  @media (max-width: 800px) {.music-container {padding: 10px;}}
+  
+  .img-container {
+    width: 100%;
+    height: fit-content;
+  }
+  
+/** using animation to make the image rotate continiously when music is playing */
+  .img-container img {
+    object-fit: cover;
+    height: 200px;
+    width: inherit;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* styling the navigation buttons */
+  .action-btn {
+    border: 0;
+    background-color: black;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+  }
+  @media (max-width: 800px) {.action-btn {width: 50%;}}
+  .action-btn i {
+    color: lime;
+  }
+  
+  .action-btn.action-btn-big {
+    font-size: 30px;
+    outline: none;
+  }
+  
+  .action-btn:hover {
+    outline: 0;
+    border: groove lime;
+  }
+
+  .music-info {
+    background-color: black;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .music-info h4 {
+    display: inline-block;
+  }
+  
+  /* styling the song progress container */
+  .progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+  }
+  
+  /* styling the actual progress bar and making it flow along with the song*/
+  .progress {
+    background-color: lime;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
